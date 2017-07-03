@@ -11,6 +11,7 @@
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		B9526E431F0A808A00958860 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9526E421F0A808A00958860 /* LoadingViewController.swift */; };
 		E19F00E7A377EEDF7CCC682C /* Pods_DeckTransition_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DEBD63392BB6F5BA85E3057 /* Pods_DeckTransition_Example.framework */; };
 		E87466B91DB2685D006E14C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E87466B81DB2685D006E14C4 /* Main.storyboard */; };
 		E882148E1DB2599B00B04EBC /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E882148D1DB2599B00B04EBC /* ModalViewController.swift */; };
@@ -30,6 +31,7 @@
 		7DEBD63392BB6F5BA85E3057 /* Pods_DeckTransition_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeckTransition_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C81B379D4CB8CE59B43EF4 /* Pods-DeckTransition_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeckTransition_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeckTransition_Tests/Pods-DeckTransition_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A2193EA18A19BF49C457E952 /* DeckTransition.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DeckTransition.podspec; path = ../DeckTransition.podspec; sourceTree = "<group>"; };
+		B9526E421F0A808A00958860 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		C4A82FF6FAF565369C5BFE08 /* Pods_DeckTransition_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeckTransition_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4BE612509EE7822DF40D7B7 /* Pods-DeckTransition_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeckTransition_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeckTransition_Example/Pods-DeckTransition_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CF5CFE9FA4F56AD080C6D5DB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				E882148D1DB2599B00B04EBC /* ModalViewController.swift */,
+				B9526E421F0A808A00958860 /* LoadingViewController.swift */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for DeckTransition";
@@ -238,7 +241,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -250,6 +253,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				E882148E1DB2599B00B04EBC /* ModalViewController.swift in Sources */,
+				B9526E431F0A808A00958860 /* LoadingViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				E8A32FE61DF1DD4900CEC9B3 /* CHANGELOG.md in Sources */,
 			);
