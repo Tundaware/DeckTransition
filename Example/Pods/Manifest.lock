@@ -1,5 +1,5 @@
 PODS:
-  - DeckTransition (0.1.0)
+  - DeckTransition (0.3.0)
 
 DEPENDENCIES:
   - DeckTransition (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DeckTransition: 0b08ce6120787157f52a3f5b8dd9b2c88fcc2caf
+  DeckTransition: 07c16c27fcc81cb98ba88c3a51f2f5ff20bcd928
 
-PODFILE CHECKSUM: 8b01bac1c052906257169d657f9b2fffd1c24981
+PODFILE CHECKSUM: 9edf02f9290f75ed590c71342c2ea480d164b2fe
 
-COCOAPODS: 1.1.0.rc.3
+COCOAPODS: 1.2.1

@@ -13,7 +13,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+			
+				self.view.layer.borderColor = UIColor.red.cgColor;
+				self.view.layer.borderWidth = 20;
+			
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 40, weight: UIFontWeightHeavy)
